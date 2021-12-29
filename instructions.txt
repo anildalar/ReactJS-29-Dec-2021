@@ -1,0 +1,50 @@
+SPA (Single Page Application)
+
+ReactJS = Javascript Framework FaceBook
+
+100KB
+
+Real DOM + Virual DOM
+
+SPA Framework
+
+1. ReactJS  Facebook  100KB Real + Virual
+2. VueJS   Ivan Eue   80KB  Real + Virtual DOM
+3. AngularJS Google   500K  Real DOM
+
+
+
+SPA
+
+
+ReactJS
+	Built IN Tools
+	1. WebPack
+
+
+Port No 4000 = Local      1000ms
+Port No 5000 = Production 200ms
+
+Main View File
+	public/index.html
+
+Main Logic File 
+	src/index.js
+
+Prerequisted 
+	1. JS,HTML,CSS
+
+ReactJS is nothing but a NodeJS Project
+
+React COmponent
+
+HTML Tags = React Compoent
+<h1></h1>  = h1 Compoent
+
+Component Inject
+
+Html Tag Place ho rahe hai
+
+How to create our own compoents?
+1. RFC (React Functional Compoent)
+2. RCC (React Class Components) Depricated/OUtdated Facebook
