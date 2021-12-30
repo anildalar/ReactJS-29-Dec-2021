@@ -1,30 +1,44 @@
 // Import Area
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-//Let Create another RFC
-function Contact(){
-  return <span>+91-7999452711</span>
+import Comp3 from './components/Comp3'
+
+import ANIL from './components/Comp2';
+
+import Comp4 from './components/Comp4';
+
+//Lets Create our First Component
+
+//Fat Arrow
+
+// Named Import
+import {Comp1} from './components/Comp1'
+
+//Default Import
+import Hoc from './components/Hoc'
+
+
+
+//Classical Function defination
+function App({data}) {
+  return  <div>
+            <Comp1 />
+            <ANIL />
+            <Comp3 />
+            <Comp4 />
+            <Hoc />
+          </div>
 }
 
-//Let create our first RFC = F = Functio
-function Course({mentor}){
-  return (
-    <span className="a">Join OKLABS Training For ReactJS { mentor } <Contact /> </span>
-  );
+let mydata = {
+  "name":"ANIl",
+  "surname":"DOLLOR",
 }
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Welcome To ReactJS <Course mentor={'ANIL DOLLOR'}  /> </h1>
+      <App data={mydata} />
   </React.StrictMode>,
-  document.getElementById('anil')
+  document.getElementById('container')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
